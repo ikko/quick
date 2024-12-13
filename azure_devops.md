@@ -423,7 +423,7 @@ extends:
 
 ---
 
-## **10. Azure Artifacts**
+## **Azure Artifacts**
 
 Azure Artifacts hosts Python packages (or other artifacts).
 
@@ -481,7 +481,7 @@ az devops configure --defaults organization=https://dev.azure.com/{organization}
 
 ---
 
-## **13. Testing in Azure Pipelines**
+## **Testing in Azure Pipelines**
 
 ### **Run Python Unit Tests**
 Add unit tests using `unittest`:
