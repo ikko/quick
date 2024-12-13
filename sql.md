@@ -299,4 +299,6 @@ Window functions perform calculations across a set of rows related to the curren
 
 ---
 
+See [reserved words](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-reserved-words) to avoid them.
+
 This cheatsheet covers the most commonly used features of **Databricks ANSI SQL** for data analysis, including window functions, aggregation, joins, subqueries, and date manipulation. It’s a great reference for writing efficient SQL queries in Databricks.
