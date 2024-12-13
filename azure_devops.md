@@ -1,604 +1,270 @@
-Here’s a **comprehensive Azure DevOps Handbook and Cheatsheet** with a focus on **Python** integration. This guide covers CI/CD pipelines, repository management, testing, deployment, and other Azure DevOps features.
-
-# **Azure DevOps Handbook**
-
-Azure DevOps is a suite of tools to manage software development lifecycles:
+Here is a **Handbook for Azure DevOps** that targets Python developers looking to integrate, automate, and streamline their workflows with Azure DevOps.
 
 ---
 
-## Key Concepts
-
-- **Azure DevOps Services**: A suite of services to manage software development, including Boards, Repos, Pipelines, Test Plans, and Artifacts.
-- **Azure Repos**: A version control system supporting Git or TFVC repositories for tracking changes to code.
-- **Azure Boards**: A tool for planning and tracking work items, sprints, and backlogs.
-- **Azure Pipelines**: Automation pipelines for Continuous Integration (CI) and Continuous Deployment (CD).
-- **Azure Artifacts**: A package management system for storing, sharing, and managing dependencies.
-- **Azure Test Plans**: Tools for testing, tracking bugs, and ensuring application quality.
-- **Work Items**: Trackable units of work like user stories, tasks, bugs, and issues.
-
-### Core DevOps Principles
-- **CI/CD (Continuous Integration and Deployment)**: Automate building, testing, and deploying code.
-- **Version Control**: Manage and track changes to source code effectively.
-- **Agile Project Management**: Use sprints, backlogs, and boards to manage tasks.
-- **Shift-Left Testing**: Integrate testing earlier in the development lifecycle.
-- **Infrastructure as Code (IaC)**: Manage infrastructure declaratively with tools like Bicep or Terraform.
+# **Azure DevOps for Python Users**
 
 ---
 
-## Setup and Configuration
+## **1. Overview**
 
-### 1. Creating an Azure DevOps Organization
-1. Go to [Azure DevOps Portal](https://dev.azure.com).
-2. Sign in with your Microsoft account.
-3. Click **Create New Organization**.
-4. Create a project within the organization:
-   - Choose **Public** (open) or **Private** (restricted access).
-   - Select version control: **Git** or **TFVC**.
-   - Configure the methodology: **Agile**, **Scrum**, or **CMMI**.
+Azure DevOps provides a platform for Continuous Integration/Continuous Deployment (CI/CD), project management, and artifact handling. Advanced Python users can automate and integrate Azure DevOps features into their workflows via:
 
-### 2. Configuring Azure Repos
-Azure Repos provides source control for managing code:
-- **Git Repos**: Distributed version control system supporting branching, merging, and pull requests.
-- **TFVC**: Centralized version control system for managing changes.
+1. **Azure CLI** and **Azure DevOps CLI** for scripting.
+2. **Azure Pipelines** for automation (YAML-based CI/CD).
+3. **Azure Artifacts** for dependency/package management.
+4. **REST APIs** for programmatic control.
 
-**Steps to Initialize a Repo**:
-```bash
-# Clone an Azure Repo locally
-git clone https://dev.azure.com/<organization>/<project>/_git/<repository>
+---
 
-# Commit and push changes
-git add .
-git commit -m "Initial commit"
-git push origin main
+# **2. Azure DevOps CLI for Python Scripting**
+
+### **Setup Azure DevOps CLI**
+
+1. **Install Azure CLI** and the DevOps extension:
+   ```bash
+   pip install azure-cli
+   az extension add --name azure-devops
+   ```
+
+2. **Authenticate to Azure DevOps**:
+   ```bash
+   az login
+   az devops configure --defaults organization=https://dev.azure.com/{org} project={project}
+   ```
+
+### **Common Azure CLI Commands**
+
+| **Task**                             | **Command**                                            |
+|--------------------------------------|-------------------------------------------------------|
+| List repositories                    | `az repos list`                                       |
+| Clone a repository                   | `git clone <AzureRepoURL>`                            |
+| List pipelines                       | `az pipelines list`                                   |
+| Trigger a pipeline                   | `az pipelines run --name {PipelineName}`              |
+| Publish an artifact                  | `az artifacts universal publish`                     |
+| List work items                      | `az boards work-item list`                            |
+
+---
+
+### **Python Automation with Azure CLI**
+
+Run Azure CLI commands programmatically using Python:
+```python
+import subprocess
+
+# Run a CLI command to list Azure repositories
+command = "az repos list --output json"
+result = subprocess.run(command, shell=True, capture_output=True, text=True)
+
+if result.returncode == 0:
+    print("Repositories:", result.stdout)
+else:
+    print("Error:", result.stderr)
 ```
 
-**Branching Strategy**:
-- Use **GitFlow** for feature development.
-- Protect **main** and **release** branches using branch policies.
-- Enforce pull requests for code reviews.
+---
+
+# **3. CI/CD Pipelines for Advanced Python Projects**
+
+### **Key Pipeline Concepts**
+- **Pipeline Triggers**: Automate pipeline execution based on commits/tags.
+- **Multi-stage Pipelines**: Break pipelines into stages for builds, tests, and deployments.
+- **Caching**: Optimize builds by caching dependencies.
+- **Environments**: Define approvals and gates for deployment environments.
+- **Secrets Management**: Securely use sensitive information like keys and credentials.
 
 ---
 
-## Working with Azure Boards
+### **Advanced Python Pipeline (YAML)**
 
-Azure Boards helps teams manage projects with features like backlogs, Kanban boards, and sprint planning.
+This pipeline:
+1. Installs dependencies (cached for efficiency).
+2. Runs tests and generates coverage reports.
+3. Deploys the app to Azure App Service.
 
-### Key Components
-- **Epics**: High-level objectives that span across sprints.
-- **Features**: Grouped user stories that deliver incremental functionality.
-- **User Stories**: Work items that describe functionality from a user’s perspective.
-- **Tasks**: Small units of work required to complete a user story.
-- **Bugs**: Track and manage application defects.
-
-**Basic Workflow**:
-1. Define epics, features, and user stories in the backlog.
-2. Use sprints to plan short, incremental cycles of work.
-3. Track progress using **Boards** and **Dashboards**.
-
----
-
-## **Azure Repos**
-
-### **Clone a Repository**
-Clone a repository locally:
-```bash
-git clone https://dev.azure.com/{organization}/{project}/_git/{repository}
-```
-
-### **Add and Commit Changes**
-```bash
-git add .                     # Stage all changes
-git commit -m "Commit message"
-git push origin main          # Push to Azure Repos
-```
-
-### **Branching**
-```bash
-# Create a new branch
-git checkout -b feature/new-feature
-
-# Push the branch
-git push origin feature/new-feature
-```
-
-### **Pull Requests**
-1. Go to Azure Repos → **Pull Requests**.
-2. Select the source and target branches.
-3. Add reviewers and submit.
-
----
-
-## **Azure Pipelines**
-
-Azure Pipelines automates builds, tests, and deployments using YAML files.
-
-### **Setup Pipeline**
-
-1. Create a `azure-pipelines.yml` in the root directory.
-2. Define the CI/CD pipeline steps.
-
----
-
-### **Python CI Pipeline Example**
+#### **azure-pipelines.yml**
 ```yaml
 trigger:
-- main  # Trigger pipeline on pushes to 'main'
+- main  # Trigger on changes to 'main' branch
 
-pool:
-  vmImage: 'ubuntu-latest'  # Use Ubuntu VM for pipeline
-
-steps:
-- task: UsePythonVersion@0  # Install Python
-  inputs:
-    versionSpec: '3.10'
-
-- script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install Dependencies'
-
-- script: |
-    python -m unittest discover tests/
-  displayName: 'Run Unit Tests'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/test-results.xml'
-  displayName: 'Publish Test Results'
-
-- script: |
-    python main.py
-  displayName: 'Run Application'
-```
-
----
-
-### **Variables and Secrets**
-Store sensitive information in Azure DevOps **Pipeline Variables**.
-
-1. Go to **Pipeline Settings** → **Variables**.
-2. Add secrets (e.g., `MY_SECRET`).
-
-Access secrets in `azure-pipelines.yml`:
-```yaml
-- script: |
-    echo "Secret: $(MY_SECRET)"
-  displayName: 'Access Secrets'
-```
-
----
-
-### **Pipeline Templates**
-
-Reuse pipeline logic with **Templates**.
-
-#### **Template File (build-template.yml)**
-```yaml
-steps:
-- script: |
-    pip install -r requirements.txt
-  displayName: 'Install Dependencies'
-```
-
-#### **Main Pipeline**
-```yaml
-trigger: [main]
-
-pool: ubuntu-latest
-
-extends:
-  template: build-template.yml
-```
-
----
-
-## **Azure Artifacts**
-
-Azure Artifacts hosts Python packages (or other artifacts).
-
-### **1. Publish a Python Package**
-
-1. Create a **feed** in Azure Artifacts.
-2. Install **`twine`**:
-   ```bash
-   pip install twine
-   ```
-
-3. Configure `~/.pypirc` for Azure Artifacts:
-   ```ini
-   [distutils]
-   index-servers = azure
-
-   [azure]
-   repository: https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/pypi/upload/
-   username: __token__
-   password: {Azure_Artifacts_PAT}
-   ```
-
-4. Upload Package:
-   ```bash
-   python setup.py sdist
-   twine upload -r azure dist/*
-   ```
-
----
-
-## **Azure Boards**
-
-Azure Boards is for agile project management.
-
-### **Key Terms**
-- **Work Items**: Tasks, bugs, user stories.
-- **Boards**: Kanban board to visualize tasks.
-- **Backlog**: List of work items to be completed.
-- **Sprint**: Iteration with a defined scope and timebox.
-
----
-
-### **Integrate Azure Boards with Git Commits**
-Add Work Item ID in commit messages:
-```bash
-git commit -m "Fix login issue. Resolves #12345"
-```
-
----
-
-## **Azure DevOps CLI**
-
-Install the **Azure CLI** and **Azure DevOps extension**:
-```bash
-# Install CLI
-pip install azure-cli
-
-# Install Azure DevOps extension
-az extension add --name azure-devops
-```
-
-### **Login to Azure DevOps**
-```bash
-az login
-az devops configure --defaults organization=https://dev.azure.com/{organization} project={project}
-```
-
-### **Common Commands**
-| **Command**                     | **Description**                         |
-|---------------------------------|-----------------------------------------|
-| `az repos list`                 | List all repositories                   |
-| `az pipelines run`              | Trigger a pipeline                      |
-| `az boards work-item list`      | List work items                         |
-| `az artifacts universal publish`| Publish a universal package to a feed   |
-
----
-
-## **Testing in Azure Pipelines**
-
-### **Run Python Unit Tests**
-Add unit tests using `unittest`:
-```python
-import unittest
-
-class TestExample(unittest.TestCase):
-    def test_addition(self):
-        self.assertEqual(1 + 1, 2)
-
-if __name__ == "__main__":
-    unittest.main()
-```
-
-Run the tests in the pipeline:
-```yaml
-- script: |
-    python -m unittest discover tests/
-  displayName: 'Run Python Unit Tests'
-```
-
-## **Azure DevOps Cheatsheet**
-
-| **Task**                        | **Command or Step**                      |
-|---------------------------------|-----------------------------------------|
-| Clone a Repo                    | `git clone <Azure Repo URL>`            |
-| Run Pipeline Manually           | `az pipelines run`                      |
-| Publish Python Package          | `twine upload -r azure dist/*`          |
-| Cache Dependencies              | Use `Cache@2` in pipelines              |
-| Deploy to App Service           | `AzureWebApp@1` task                    |
-| Access Key Vault Secrets        | `AzureKeyVault@2` task                  |
-| Test Python Code                | `python -m unittest`                    |
-
----
-
-## **Azure Repos**
-
-### **Clone a Repository**
-Clone a repository locally:
-```bash
-git clone https://dev.azure.com/{organization}/{project}/_git/{repository}
-```
-
-### **Add and Commit Changes**
-```bash
-git add .                     # Stage all changes
-git commit -m "Commit message"
-git push origin main          # Push to Azure Repos
-```
-
-### **Branching**
-```bash
-# Create a new branch
-git checkout -b feature/new-feature
-
-# Push the branch
-git push origin feature/new-feature
-```
-
-### **Pull Requests**
-1. Go to Azure Repos → **Pull Requests**.
-2. Select the source and target branches.
-3. Add reviewers and submit.
-
----
-
-## **Azure Pipelines**
-
-Azure Pipelines automates builds, tests, and deployments using YAML files.
-
-### **Setup Pipeline**
-
-1. Create a `azure-pipelines.yml` in the root directory.
-2. Define the CI/CD pipeline steps.
-
----
-
-### **9.1 Python CI Pipeline Example**
-```yaml
-trigger:
-- main  # Trigger pipeline on pushes to 'main'
-
-pool:
-  vmImage: 'ubuntu-latest'  # Use Ubuntu VM for pipeline
-
-steps:
-- task: UsePythonVersion@0  # Install Python
-  inputs:
-    versionSpec: '3.10'
-
-- script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install Dependencies'
-
-- script: |
-    python -m unittest discover tests/
-  displayName: 'Run Unit Tests'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/test-results.xml'
-  displayName: 'Publish Test Results'
-
-- script: |
-    python main.py
-  displayName: 'Run Application'
-```
-
----
-
-### **Variables and Secrets**
-Store sensitive information in Azure DevOps **Pipeline Variables**.
-
-1. Go to **Pipeline Settings** → **Variables**.
-2. Add secrets (e.g., `MY_SECRET`).
-
-Access secrets in `azure-pipelines.yml`:
-```yaml
-- script: |
-    echo "Secret: $(MY_SECRET)"
-  displayName: 'Access Secrets'
-```
-
----
-
-### **Pipeline Templates**
-
-Reuse pipeline logic with **Templates**.
-
-#### **Template File (build-template.yml)**
-```yaml
-steps:
-- script: |
-    pip install -r requirements.txt
-  displayName: 'Install Dependencies'
-```
-
-#### **Main Pipeline**
-```yaml
-trigger: [main]
-
-pool: ubuntu-latest
-
-extends:
-  template: build-template.yml
-```
-
----
-
-## **Azure Artifacts**
-
-Azure Artifacts hosts Python packages (or other artifacts).
-
-### Publish a Python Package**
-
-1. Create a **feed** in Azure Artifacts.
-2. Install **`twine`**:
-   ```bash
-   pip install twine
-   ```
-
-3. Configure `~/.pypirc` for Azure Artifacts:
-   ```ini
-   [distutils]
-   index-servers = azure
-
-   [azure]
-   repository: https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/pypi/upload/
-   username: __token__
-   password: {Azure_Artifacts_PAT}
-   ```
-
-4. Upload Package:
-   ```bash
-   python setup.py sdist
-   twine upload -r azure dist/*
-   ```
-
----
-
-## **Azure DevOps CLI**
-
-Install the **Azure CLI** and **Azure DevOps extension**:
-```bash
-# Install CLI
-pip install azure-cli
-
-# Install Azure DevOps extension
-az extension add --name azure-devops
-```
-
-### **Login to Azure DevOps**
-```bash
-az login
-az devops configure --defaults organization=https://dev.azure.com/{organization} project={project}
-```
-
-### **Common Commands**
-| **Command**                     | **Description**                         |
-|---------------------------------|-----------------------------------------|
-| `az repos list`                 | List all repositories                   |
-| `az pipelines run`              | Trigger a pipeline                      |
-| `az boards work-item list`      | List work items                         |
-| `az artifacts universal publish`| Publish a universal package to a feed   |
-
----
-
-## **Testing in Azure Pipelines**
-
-### **Run Python Unit Tests**
-Add unit tests using `unittest`:
-```python
-import unittest
-
-class TestExample(unittest.TestCase):
-    def test_addition(self):
-        self.assertEqual(1 + 1, 2)
-
-if __name__ == "__main__":
-    unittest.main()
-```
-
-Run the tests in the pipeline:
-```yaml
-- script: |
-    python -m unittest discover tests/
-  displayName: 'Run Python Unit Tests'
-```
-
----
-
-## **Deployment with Azure Pipelines**
-
-### **1. Deploy to Azure App Service**
-**azure-pipelines.yml**:
-```yaml
-trigger: [main]
+variables:
+  pythonVersion: '3.10'
 
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  azureSubscription: 'my-subscription'
-  appName: 'my-flask-app'
+stages:
+- stage: Build
+  displayName: "Build and Test"
+  jobs:
+  - job: BuildJob
+    displayName: "Build and Test Python App"
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: "Use Python $(pythonVersion)"
 
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.10'
+    - task: Cache@2  # Cache dependencies for faster builds
+      inputs:
+        key: 'pip | "$(Agent.OS)" | requirements.txt'
+        restoreKeys: 'pip | "$(Agent.OS)"'
+        path: '~/.cache/pip'
 
-- script: |
-    pip install -r requirements.txt
-  displayName: 'Install Dependencies'
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: "Install Dependencies"
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
+    - script: |
+        pytest --junitxml=test-results.xml --cov=my_app
+      displayName: "Run Tests"
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: '$(azureSubscription)'
-    appName: '$(appName)'
-    package: '$(Build.ArtifactStagingDirectory)/app.zip'
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'test-results.xml'
+      displayName: "Publish Test Results"
+
+    - task: PublishCodeCoverageResults@1
+      inputs:
+        codeCoverageTool: 'Cobertura'
+        summaryFileLocation: 'coverage.xml'
+      displayName: "Publish Code Coverage"
+
+- stage: Deploy
+  displayName: "Deploy to Azure App Service"
+  jobs:
+  - job: DeployJob
+    displayName: "Deploy Application"
+    steps:
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
+      displayName: "Archive Application"
+
+    - task: AzureWebApp@1
+      inputs:
+        azureSubscription: '<ServiceConnection>'
+        appName: 'my-python-app'
+        package: '$(Build.ArtifactStagingDirectory)/app.zip'
+      displayName: "Deploy to Azure Web App"
 ```
 
 ---
 
-## **Pipeline Cache and Artifacts**
+## **4. Advanced Testing and Reporting**
 
-### **Cache Dependencies**
-```yaml
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | requirements.txt'
-    path: '~/.cache/pip'
-- script: pip install -r requirements.txt
-```
+### **Running Tests with `pytest`**
+1. Install `pytest` and coverage tools:
+   ```bash
+   pip install pytest pytest-cov
+   ```
 
-### **Publish Build Artifacts**
+2. Run tests and generate coverage reports:
+   ```bash
+   pytest --cov=my_app --junitxml=test-results.xml
+   ```
+
+### **Publish Test and Coverage Reports in Pipeline**
 ```yaml
-- task: PublishBuildArtifacts@1
+- task: PublishTestResults@2
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-results.xml'
+  displayName: "Publish Test Results"
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: 'coverage.xml'
+  displayName: "Publish Code Coverage"
 ```
 
 ---
 
-## **Secrets Management**
+## **5. Secrets Management**
 
-Integrate Azure Key Vault to manage sensitive secrets:
-```yaml
-- task: AzureKeyVault@2
-  inputs:
-    azureSubscription: 'my-subscription'
-    KeyVaultName: 'my-keyvault'
-    SecretsFilter: '*'
+Integrate **Azure Key Vault** for secrets management.
+
+### **Store and Retrieve Secrets**
+
+1. **Add Key Vault Task in Pipeline**:
+   ```yaml
+   - task: AzureKeyVault@2
+     inputs:
+       azureSubscription: '<ServiceConnection>'
+       KeyVaultName: '<KeyVaultName>'
+       SecretsFilter: '*'
+     displayName: "Fetch Secrets from Key Vault"
+   ```
+
+2. **Access Secrets**:
+   ```yaml
+   - script: |
+       echo "Secret: $(my-secret)"
+     displayName: "Use Secrets in Pipeline"
+   ```
+
+---
+
+## **6. REST APIs for Azure DevOps**
+
+Leverage the **Azure DevOps REST API** for advanced automation.
+
+### **1. List Pipelines**
+```python
+import requests
+from requests.auth import HTTPBasicAuth
+
+organization = "<organization>"
+project = "<project>"
+personal_access_token = "PAT"  # Azure DevOps Personal Access Token
+
+url = f"https://dev.azure.com/{organization}/{project}/_apis/pipelines?api-version=6.0"
+response = requests.get(url, auth=HTTPBasicAuth("", personal_access_token))
+
+if response.status_code == 200:
+    pipelines = response.json()
+    for pipeline in pipelines['value']:
+        print(f"Pipeline ID: {pipeline['id']}, Name: {pipeline['name']}")
+else:
+    print("Error:", response.status_code, response.text)
 ```
 
-Access secrets as variables:
-```yaml
-- script: echo "My secret is $(my-secret)"
+### **2. Trigger a Pipeline**
+```python
+url = f"https://dev.azure.com/{organization}/{project}/_apis/pipelines/{pipeline_id}/runs?api-version=6.0"
+response = requests.post(url, auth=HTTPBasicAuth("", personal_access_token), json={})
+
+print("Pipeline Triggered:", response.status_code)
 ```
 
 ---
 
-## **Azure DevOps Cheatsheet**
+## **7. Cheatsheet**
 
-| **Task**                        | **Command or Step**                      |
-|---------------------------------|-----------------------------------------|
-| Clone a Repo                    | `git clone <Azure Repo URL>`            |
-| Run Pipeline Manually           | `az pipelines run`                      |
-| Publish Python Package          | `twine upload -r azure dist/*`          |
-| Cache Dependencies              | Use `Cache@2` in pipelines              |
-| Deploy to App Service           | `AzureWebApp@1` task                    |
-| Access Key Vault Secrets        | `AzureKeyVault@2` task                  |
-| Test Python Code                | `python -m unittest`                    |
+### **Azure CLI Commands**
+| **Task**                    | **Command**                                        |
+|-----------------------------|---------------------------------------------------|
+| Login to Azure DevOps       | `az login`                                        |
+| Set Defaults                | `az devops configure --defaults organization=...` |
+| Trigger a Pipeline          | `az pipelines run --name {PipelineName}`          |
+| List Artifacts              | `az artifacts universal list`                     |
+| Fetch Work Items            | `az boards work-item list`                        |
+
+---
+
+### **Pipeline Best Practices**
+1. Use **caching** to speed up dependency installation.
+2. Integrate **Azure Key Vault** for secrets.
+3. Use **multi-stage pipelines** for build-test-deploy workflows.
+4. Publish **test results** and **code coverage** for visibility.
+5. Automate pipeline creation and triggers with **REST API** and **CLI**.
 
 ---
 
 ## **Summary**
 
-This Azure DevOps handbook covers core concepts like CI/CD pipelines, Python project deployment, and integration of key services such as Azure Repos, Pipelines, Boards, and Key Vault. By automating workflows with Azure Pipelines and managing secrets effectively, you can streamline Python development and deployment.
-
-
+This advanced handbook demonstrates how Python developers can fully integrate Azure DevOps into their workflows. By leveraging CI/CD pipelines, CLI automation, REST APIs, and Key Vault secrets, Python projects can achieve robust automation, testing, and deployment pipelines.
