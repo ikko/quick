@@ -90,7 +90,7 @@ A kreatív gondolkodáshoz **nyitott hozzáállás, kísérletezés, inspiráló
 
 A **SCAMPER** módszer egy kreatív gondolkodási és problémamegoldási technika, amely **új ötletek generálására** vagy a meglévő koncepciók továbbfejlesztésére szolgál. Ez egy struktúrált módja annak, hogy különböző nézőpontokból közelíts meg egy problémát vagy projektet.
 
-Az SCAMPER egy **rövidítés**, amely 7 kérdéscsoportot foglal magába:  
+A SCAMPER egy **rövidítés**, amely 7 kérdéscsoportot foglal magába:  
 - **S**: **Substitute** (Helyettesítés)  
 - **C**: **Combine** (Kombinálás)  
 - **A**: **Adapt** (Adaptálás)  
