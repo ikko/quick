@@ -16,9 +16,10 @@ A buddhizmus erkölcsi szabályai és útmutatói az egyén belső fejlődését
 ### **A Nyolcrétű Nemes Ösvény:**  
 Ez az út a szenvedés megszüntetéséhez és a megvilágosodáshoz vezet. Három fő kategóriába sorolható:  
 
+
 - **Bölcsesség (Prajna):**  
-   1. **Helyes megértés**: A Négy Nemes Igazság felismerése.  
-   2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.  
+   1. **Helyes megértés**: A Négy Nemes Igazság felismerése.
+   2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.
 
 - **Erkölcsi fegyelem (Sila):**  
    3. **Helyes beszéd**: Kerüld a hazugságot, pletykát, sértést.  
