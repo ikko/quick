@@ -316,3 +316,55 @@ A menedék végső soron azt jelenti, hogy:
 - **A Szangha** a támogatás, amely segít az úton maradni.
 
 A menedékhez való folyamatos visszatérés a buddhista élet alapját és motivációját biztosítja.
+
+---
+
+A **buddhizmus Öt Előírása** (Páli: *pañca-sīla*) az etikus viselkedés alapvető szabályai, amelyeket a gyakorlók követnek, hogy elősegítsék spirituális fejlődésüket és csökkentsék a szenvedést. Az előírások nem parancsolatok vagy tiltások, hanem **önkéntesen vállalt útmutatások**, amelyek a saját és mások jólétét szolgálják.
+
+## **Az Öt Előírás (Pañca-Sīla)**
+
+1. **Ne ölj** (*Páli: Pāṇātipātā veramaṇī*):  
+   - **Jelentés**: Tartózkodás az élőlények elpusztításától.  
+   - **Gyakorlati alkalmazás**: Tiszteletben tartjuk az életet, legyen szó emberekről vagy állatokról. Törekedünk az erőszakmentességre és együttérzésre minden élőlény iránt.  
+   - **Mélysége**: Nemcsak a fizikai ölés elkerülése fontos, hanem a harag, gyűlölet és romboló szándék elengedése is.  
+
+2. **Ne lopj** (*Páli: Adinnādānā veramaṇī*):  
+   - **Jelentés**: Tartózkodás attól, hogy bármit jogosulatlanul elveszünk.  
+   - **Gyakorlati alkalmazás**: Mások tulajdonának tiszteletben tartása, valamint az őszinteség gyakorlása minden helyzetben.  
+   - **Mélysége**: A mohóság és a birtoklási vágy csökkentése is ide tartozik, hiszen ezek a cselekedetek alapját képezik.  
+
+3. **Ne légy helytelen nemi viselkedésű** (*Páli: Kāmesu micchācārā veramaṇī*):  
+   - **Jelentés**: Tartózkodás a helytelen szexuális viselkedéstől.  
+   - **Gyakorlati alkalmazás**: Tiszteletben tartjuk mások érzéseit és kapcsolatait, és kerüljük a káros, tisztességtelen vagy kizsákmányoló szexuális viselkedést.  
+   - **Mélysége**: A tudatosság és felelősség gyakorlása a vágyak terén, hogy ne okozzunk szenvedést magunknak vagy másoknak.  
+
+4. **Ne hazudj** (*Páli: Musāvādā veramaṇī*):  
+   - **Jelentés**: Tartózkodás a hamisságtól és a megtévesztéstől.  
+   - **Gyakorlati alkalmazás**: Az igazmondás és őszinteség gyakorlása a beszédben, valamint a bántó, pletykáló vagy viszálykeltő beszéd elkerülése.  
+   - **Mélysége**: Tudatos beszéd gyakorlása, hogy a szavaink építsenek és segítsenek másokat.  
+
+5. **Ne fogyassz tudatmódosító szereket** (*Páli: Surā-meraya-majjapamādaṭṭhānā veramaṇī*):  
+   - **Jelentés**: Tartózkodás az alkoholtól és más tudatmódosító szerektől, amelyek károsítják a tudatosságot.  
+   - **Gyakorlati alkalmazás**: A tiszta tudat megőrzése érdekében kerülni kell mindent, ami zavart, tompaságot vagy tudatlanságot okoz.  
+   - **Mélysége**: Az éberség (mindfulness) fejlesztése és megóvása, hiszen a tudatmódosító szerek csökkentik a felelős viselkedést és előidézhetik az előző négy előírás megszegését.  
+
+---
+
+## **Az Öt Előírás célja**  
+
+Az Öt Előírás célja nemcsak a szenvedés csökkentése, hanem az **erkölcsi tisztaság** (sīla) kialakítása, amely a buddhista gyakorlás alapját képezi. A tiszta viselkedés lehetővé teszi a tudat lecsendesítését és a **bölcsesség** (paññā) kibontakozását. Az előírások követésével a gyakorlók pozitív hatást gyakorolnak önmagukra és környezetükre.
+
+---
+
+## **Az Előírások Nem Erkölcsi Parancsolatok**  
+Fontos hangsúlyozni, hogy a buddhizmusban az Öt Előírás **önként vállalt útmutatás**, nem parancs vagy dogma. A gyakorlók szabad akaratukból követik ezeket, felismerve azok előnyeit a saját életükben és a közösségükben. A gyakorlás alapja az **éberség** (mindfulness), amely segít tudatosítani a tetteink következményeit.
+
+---
+
+## **Az előírások szellemi fejlődésre gyakorolt hatása**  
+Az Öt Előírás segíti a gyakorlót abban, hogy:  
+1. Elkerülje a rossz karmát okozó tetteket.  
+2. Fejlessze a jószándékot, együttérzést és tudatosságot.  
+3. Tisztább és békésebb életet éljen, amely támogatja a meditációt és a megvilágosodás útját.  
+
+Az előírások követése tehát nemcsak az erkölcsi viselkedést javítja, hanem előkészíti a terepet a magasabb szintű buddhista gyakorlatok, például a **meditáció** és a **bölcsesség** fejlesztése számára.
