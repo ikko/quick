@@ -18,8 +18,8 @@ Ez az út a szenvedés megszüntetéséhez és a megvilágosodáshoz vezet. Hár
 
 
 - **Bölcsesség (Prajna):**  
-   1. **Helyes megértés**: A Négy Nemes Igazság felismerése.
-   2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.
+   1. **Helyes megértés**: A Négy Nemes Igazság felismerése.  
+   2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.  
 
 - **Erkölcsi fegyelem (Sila):**  
    3. **Helyes beszéd**: Kerüld a hazugságot, pletykát, sértést.  
@@ -32,7 +32,7 @@ Ez az út a szenvedés megszüntetéséhez és a megvilágosodáshoz vezet. Hár
    8. **Helyes elmélyedés**: Meditációval a tudat lecsendesítése.  
 
 
-A **Nemes Nyolcrétű Ösvény** a buddhizmus egyik központi tanítása, amely a szenvedés megszüntetéséhez vezető utat mutatja be. Ez a gyakorlatok és erkölcsi irányelvek rendszere a **Négy Nemes Igazság** negyedik pontjához kapcsolódik, és a helyes életvezetés, tudatosság, valamint bölcsesség kombinációját foglalja magában.  
+A **Nemes Nyolcrétű Ösvény** a buddhizmus egyik központi tanítása, amely a szenvedés megszüntetéséhez vezető utat mutatja be. Ez a gyakorlatok és erkölcsi irányelvek rendszere a **Négy Nemes Igazság** negyedik pontjához kapcsolódik, és a helyes életvezetés, tudatosság, valamint bölcsesség kombinációját foglalja magában. Bővebben:  
 
 A Nemes Nyolcrétű Ösvény **nyolc eleme** három fő kategóriába sorolható:  
 1. **Bölcsesség (Prajñā)**  
@@ -41,42 +41,42 @@ A Nemes Nyolcrétű Ösvény **nyolc eleme** három fő kategóriába sorolható
 
 ---
 
-### **1.1. Bölcsesség (Prajñā)**  
+### **Bölcsesség (Prajñā)**  
 
-#### 1.1.1 **Helyes megértés (samma-ditthi):**  
+#### **1: Helyes megértés (samma-ditthi):**  
 - A valóság természetének, a **Négy Nemes Igazságnak** a felismerése és megértése.  
 - Felismerni az állandótlanságot (**Anitya**), az én-nélküliséget (**Anátman**) és a szenvedést (**Dukkha**).  
 - Példa: Annak belátása, hogy a vágyak és ragaszkodások vezetnek szenvedéshez.  
 
-#### 1.1.2 **Helyes gondolkodás (samma-sankappa):**  
+#### **2: Helyes gondolkodás (samma-sankappa):**  
 - Olyan gondolkodásmód kialakítása, amely mentes a rossz szándéktól, gyűlölettől és ártalmas vágyaktól.  
 - A szeretetteljes és együttérző gondolatok gyakorlása.  
 - Példa: Az erőszakmentesség és mások javára irányuló szándék ápolása.  
 
 ---
 
-### **1.2. Erkölcs (Śīla)**  
+### **Erkölcs (Śīla)**  
 
-#### 1.2.1 **Helyes beszéd (samma-vācā):**  
+#### **3: Helyes beszéd (samma-vācā):**  
 - Az igazság, kedvesség és hasznosság alapelvei szerint beszélni.  
 - Tartózkodni a hazugságtól, rágalmazástól, durva beszédtől és fölösleges fecsegéstől.  
 - Példa: Mások megsértése helyett építő jellegű és őszinte kommunikáció.  
 
-#### 1.2.2 **Helyes cselekedet (samma-kammanta):**  
+#### **4: Helyes cselekedet (samma-kammanta):**  
 - Etikus és helyes tettek végrehajtása, amely nem árt másoknak.  
 - A buddhista alapelvek (pl. nem ölni, nem lopni, nem követni helytelen szexuális viselkedést) követése.  
 - Példa: Segítségnyújtás a rászorulóknak és más élőlények védelme.  
 
-#### 1.2.3 **Helyes életmód (samma-ājīva):**  
+#### **5: Helyes életmód (samma-ājīva):**  
 - Olyan megélhetési forrás választása, amely nem árt másoknak és összhangban van az erkölcsi elvekkel.  
 - Kerülni az olyan munkákat, amelyek élőlények kizsákmányolását vagy károsítást okoznak (pl. fegyverkereskedelem, mérgező anyagok).  
 - Példa: Erkölcsös szakma választása, amely hasznos a társadalomnak.  
 
 ---
 
-### **1.3. Meditáció (Samādhi)**  
+### **Meditáció (Samādhi)**  
 
-#### 1.3.1 **Helyes erőfeszítés (samma-vāyāma):**  
+#### **6: Helyes erőfeszítés (samma-vāyāma):**  
 - Tudatos erőfeszítés annak érdekében, hogy:  
   1. Megelőzzük a negatív mentális állapotok kialakulását.  
   2. Legyőzzük a már meglévő negatív gondolatokat.  
@@ -84,12 +84,12 @@ A Nemes Nyolcrétű Ösvény **nyolc eleme** három fő kategóriába sorolható
   4. Megtartsuk a meglévő pozitív mentális állapotokat.  
 - Példa: Az irigység helyett az öröm gyakorlása mások sikerei felett.  
 
-#### 1.3.2 **Helyes éberség (samma-sati):**  
+#### **7: Helyes éberség (samma-sati):**  
 - A jelen pillanatra irányuló tudatosság és éber figyelem fejlesztése.  
 - Figyelemmel kísérni a test, az érzések, a gondolatok és a tudat állapotait.  
 - Példa: A légzésfigyelés gyakorlása, a cselekedetek tudatosítása mindennapi életben.  
 
-#### 1.3.3 **Helyes elmélyedés (samma-samādhi):**  
+#### **8: Helyes elmélyedés (samma-samādhi):**  
 - A tudat koncentrációjának fejlesztése a meditáció segítségével.  
 - A különböző **meditatív állapotok (jhána)** elérése, amelyekben a tudat nyugodt, összpontosított és tiszta.  
 - Példa: A Samatha (nyugalom) meditáció gyakorlása, amely a tudat egyhegyűségét fejleszti.  
@@ -105,7 +105,7 @@ Ez a gyakorlat minden ember számára követhető út, amely segít megtalálni 
 
 ---
 
-## **2. A Buddhizmus Felépítése**  
+## **A Buddhizmus Felépítése**  
 
 ### **Három fő irányzat:**  
 1. **Théraváda** („Vének tanítása”):  
@@ -122,7 +122,7 @@ Ez a gyakorlat minden ember számára követhető út, amely segít megtalálni 
 
 ---
 
-## **3. A Gyakorlás Módjai**  
+## **A Gyakorlás Módjai**  
 
 A buddhista gyakorlás a **tudatosság, erkölcsi tisztaság** és a **bölcsesség** fejlesztésére összpontosít.  
 
@@ -148,7 +148,7 @@ A buddhista gyakorlás a **tudatosság, erkölcsi tisztaság** és a **bölcsess
 
 ---
 
-## **4. Életszemlélet**  
+## **Életszemlélet**  
 
 A buddhizmus életszemlélete a **függő keletkezés** és a dolgok állandótlanságának (Anitya) megértésére épül.  
 
@@ -159,7 +159,7 @@ A buddhizmus életszemlélete a **függő keletkezés** és a dolgok állandótl
 
 ---
 
-## **5. Kulcsfogalmak**  
+## **Kulcsfogalmak**  
 
 1. **Négy Nemes Igazság:** A szenvedés okainak és megszüntetésének alapelve.  
 2. **Nirvána:** A vágyak és a tudatlanság megszüntetése, a végső felszabadulás állapota.  
@@ -180,7 +180,7 @@ A buddhizmus életszemlélete a **függő keletkezés** és a dolgok állandótl
 
 ---
 
-### **6. A Négy Nemes Igazság**  
+### **A Négy Nemes Igazság**  
 
 A buddhizmus központi tanítása a **Négy Nemes Igazság** (Cattāri Ariyasaccāni), amelyet Buddha a megvilágosodása után osztott meg a világgal. Ez a tanítás a szenvedés természetét, okait és megszüntetésének módját tárja fel:  
 
@@ -206,7 +206,7 @@ A buddhizmus központi tanítása a **Négy Nemes Igazság** (Cattāri Ariyasacc
 
 ---
 
-### **7. Az Üresség (Shunyata) Jellemzői**  
+### **Az Üresség (Shunyata) Jellemzői**  
 
 A **shunyata** vagy üresség a buddhizmus egyik mély filozófiai tanítása, amely különösen a mahájána buddhizmusban hangsúlyos.  
 
@@ -228,7 +228,7 @@ A **shunyata** vagy üresség a buddhizmus egyik mély filozófiai tanítása, a
 
 ---
 
-### **8. A Hat Paramita (Tökéletességek)**  
+### **A Hat Paramita (Tökéletességek)**  
 
 A **Hat Paramita** a mahájána buddhizmus gyakorlati erényei, amelyek segítenek a megvilágosodás elérésében és a Bodhiszattva út követésében.  
 
@@ -258,7 +258,7 @@ A **Hat Paramita** a mahájána buddhizmus gyakorlati erényei, amelyek segíten
 
 ---
 
-### **9. Összegzés**  
+### **Gyakorlás**  
 
 - A **Négy Nemes Igazság** a buddhista tanítás alapja, amely a szenvedés okait és annak megszüntetését tanítja.  
 - A **Kulcsfogalmak** segítenek megérteni a valóság természetét, a karma működését és a megvilágosodás útját.  
@@ -270,3 +270,53 @@ A buddhizmus a **szenvedés megszüntetésének** útját tanítja a **Négy Nem
 Ezek az elvek együtt segítik a gyakorlót abban, hogy elengedje a szenvedést okozó vágyakat, megértse a valóságot, és belső békére, valamint mások iránti együttérzésre törekedjen.
 
 A meditáció, az etikus életvitel, valamint a belső megértés és éberség gyakorlása által a gyakorló elérheti a **Nirvánát**, vagyis a teljes felszabadulást és a tartós belső békét.
+
+---
+
+A **Három Ékszer** a buddhizmusban a gyakorlók központi menedéke és a hit alapja. A buddhista hagyományban ez a három fontos elem szolgál iránytűként a spirituális úton.
+
+---
+
+## **A Három Ékszer (Triratna):**  
+1. **Buddha** – A megvilágosodott mester, aki felismerte a valóság természetét, és utat mutatott a szenvedés megszüntetéséhez. A Buddha személyesen Gautama Sziddhártára (Sákjamuni Buddhára) utal, ugyanakkor magában foglalja a *buddhaság állapotát*, amely minden lényben potenciálisan jelen van.  
+   - Buddha szimbolizálja a **megvilágosodást**, a példát és az inspirációt a gyakorlók számára.  
+
+2. **Dharma (Tan)** – A Buddha tanítása, amely leírja a valóság működését, a szenvedés természetét, annak okait és megszüntetésének útját. A Dharma magában foglalja a **Négy Nemes Igazságot**, a **Nemes Nyolcrétű Ösvényt**, valamint minden más útmutatást, amely segít a megszabadulás elérésében.  
+   - A Dharma a **szellemi út** és a gyakorlatok rendszere.  
+
+3. **Szangha (Közösség)** – A gyakorlók közössége, akik támogatják egymást a szellemi fejlődésben. A szangha hagyományosan két részre oszlik:  
+   - **Szerzetesek és apácák közössége (bhikkhu/bhikkhuni)**: Ők azok, akik teljesen elköteleződnek a tanítás mellett.  
+   - **Világi követők**: Akik a mindennapi életükben követik a Buddha tanítását.  
+   - A szangha a **közösségi támogatást és példát** biztosít a gyakorlók számára.
+
+---
+
+## **A Menedék Jelentése**  
+A "menedékvétel" (Páli: *sarana-gamana*) a buddhizmusban a következő három elemhez való elköteleződést jelenti:
+
+- **Menedéket venni a Buddhában** azt jelenti, hogy a Buddha példáját követjük, mint útmutatót a megvilágosodáshoz.  
+- **Menedéket venni a Dharmában** azt jelenti, hogy a Buddha tanításait elfogadjuk az igazságként, és azokat a mindennapi életünkben gyakoroljuk.  
+- **Menedéket venni a Szanghában** azt jelenti, hogy a közösség támogatását igénybe vesszük, és mi is részt veszünk a mások megsegítésében.
+
+---
+
+### **Menedékvétel gyakorlata**  
+A menedékvétel rituális formája a következő formula háromszori elmondását foglalja magába:
+
+> **„Buddhám saranam gacchámi”** – Menedéket veszek a Buddhában.  
+> **„Dhammam saranam gacchámi”** – Menedéket veszek a Dharmában.  
+> **„Sangham saranam gacchámi”** – Menedéket veszek a Szanghában.  
+
+Ez az elköteleződés kifejezi a gyakorló szándékát, hogy a Buddha tanításai szerint él, és a közösség támogatásával fejlődik a megvilágosodás felé.
+
+---
+
+### **A menedék mélyebb értelme**  
+A menedékvétel nem jelenti azt, hogy külső erők védelmére hagyatkozunk, hanem inkább a **belső fejlődésre** irányuló elkötelezettséget. A három ékszerhez való fordulás azt szimbolizálja, hogy felismerjük a belső potenciált a megszabadulásra és a boldogságra.  
+
+A menedék végső soron azt jelenti, hogy:
+- **A Buddha** az ébredett állapot példaképe.
+- **A Dharma** az út, amely elvezet a szenvedés megszüntetéséhez.
+- **A Szangha** a támogatás, amely segít az úton maradni.
+
+A menedékhez való folyamatos visszatérés a buddhista élet alapját és motivációját biztosítja.
