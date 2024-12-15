@@ -16,7 +16,6 @@ A buddhizmus erkölcsi szabályai és útmutatói az egyén belső fejlődését
 ### **A Nyolcrétű Nemes Ösvény:**  
 Ez az út a szenvedés megszüntetéséhez és a megvilágosodáshoz vezet. Három fő kategóriába sorolható:  
 
-
 - **Bölcsesség (Prajna):**  
    1. **Helyes megértés**: A Négy Nemes Igazság felismerése.  
    2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.  
@@ -274,8 +273,6 @@ A meditáció, az etikus életvitel, valamint a belső megértés és éberség 
 ---
 
 A **Három Ékszer** a buddhizmusban a gyakorlók központi menedéke és a hit alapja. A buddhista hagyományban ez a három fontos elem szolgál iránytűként a spirituális úton.
-
----
 
 ## **A Három Ékszer (Triratna):**  
 1. **Buddha** – A megvilágosodott mester, aki felismerte a valóság természetét, és utat mutatott a szenvedés megszüntetéséhez. A Buddha személyesen Gautama Sziddhártára (Sákjamuni Buddhára) utal, ugyanakkor magában foglalja a *buddhaság állapotát*, amely minden lényben potenciálisan jelen van.  
