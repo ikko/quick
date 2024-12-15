@@ -17,18 +17,18 @@ A buddhizmus erkölcsi szabályai és útmutatói az egyén belső fejlődését
 Ez az út a szenvedés megszüntetéséhez és a megvilágosodáshoz vezet. Három fő kategóriába sorolható:  
 
 - **Bölcsesség (Prajna):**  
-   1. **Helyes megértés**: A Négy Nemes Igazság felismerése.  
-   2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.  
+1. **Helyes megértés**: A Négy Nemes Igazság felismerése.  
+2. **Helyes szándék**: Jóakarat, együttérzés és nem ártó szándék.  
 
 - **Erkölcsi fegyelem (Sila):**  
-   3. **Helyes beszéd**: Kerüld a hazugságot, pletykát, sértést.  
-   4. **Helyes cselekedet**: Az Öt Előírás betartása.  
-   5. **Helyes életmód**: Olyan életmód, amely nem árt másoknak.  
+3. **Helyes beszéd**: Kerüld a hazugságot, pletykát, sértést.  
+4. **Helyes cselekedet**: Az Öt Előírás betartása.  
+5. **Helyes életmód**: Olyan életmód, amely nem árt másoknak.  
 
 - **Meditáció és lelki fegyelem (Samadhi):**  
-   6. **Helyes erőfeszítés**: Pozitív gondolatok és szokások fejlesztése, negatívak elhagyása.  
-   7. **Helyes éberség**: A jelen pillanat tudatos figyelése.  
-   8. **Helyes elmélyedés**: Meditációval a tudat lecsendesítése.  
+6. **Helyes erőfeszítés**: Pozitív gondolatok és szokások fejlesztése, negatívak elhagyása.  
+7. **Helyes éberség**: A jelen pillanat tudatos figyelése.  
+8. **Helyes elmélyedés**: Meditációval a tudat lecsendesítése.  
 
 
 A **Nemes Nyolcrétű Ösvény** a buddhizmus egyik központi tanítása, amely a szenvedés megszüntetéséhez vezető utat mutatja be. Ez a gyakorlatok és erkölcsi irányelvek rendszere a **Négy Nemes Igazság** negyedik pontjához kapcsolódik, és a helyes életvezetés, tudatosság, valamint bölcsesség kombinációját foglalja magában. Bővebben:  
@@ -175,7 +175,6 @@ A buddhizmus életszemlélete a **függő keletkezés** és a dolgok állandótl
 8. **Karma:** Minden tettnek következménye van, amely befolyásolja jelenlegi és jövőbeli életünket.  
 9. **Samszára:** A születés, halál és újraszületés körforgása, amelyből a megvilágosodás által lehet kiszabadulni.  
 10. **Nirvána:** A szenvedés megszüntetése, a vágyak elengedése, a tudat tökéletes felszabadulása.  
-11. **Pratítja-szamutpáda (függő keletkezés):** Minden jelenség egymástól függően létezik; semmi sem önálló vagy független.
 
 ---
 
@@ -201,7 +200,7 @@ A buddhizmus központi tanítása a **Négy Nemes Igazság** (Cattāri Ariyasacc
 
 4. **Magga – A szenvedés megszüntetéséhez vezető út:**  
    - A **Nemes Nyolcrétű Ösvény** az a gyakorlati út, amely a szenvedés megszüntetéséhez vezet.  
-   - Ez a helyes életmód, meditáció és bölcsesség ötvözete (lásd korábban).  
+   - Ez a helyes életmód, meditáció és bölcsesség ötvözete.  
 
 ---
 
